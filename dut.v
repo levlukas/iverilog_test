@@ -1,12 +1,12 @@
-//dut = save in dut.v
+module and_gate
+(
+  input  input_1,
+  input  input_2,
+  output reg and_result
+);
 
-module and_gate(out,a,b);
+  always @(*) begin
+    and_result = input_1 & input_2;
+  end
 
-	input a,b;
-	output out;
-	
-	assign out = a & b;
-
-	//and a1(out,a,b); for gate level abstraction
-
-endmodule
+endmodule // example_and_gate

@@ -6,7 +6,7 @@ module tb;
 	wire out;  // output assigned to net
 
 	// instantiate dut
-	and_gate dut(out,A,B);
+	and_gate dut(A,B,out);
 
 	initial
 
